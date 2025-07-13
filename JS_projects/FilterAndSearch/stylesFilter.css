@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+border: none;
+outline: none;
+}
+body{
+    background-color: #f4efeb;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+#search-container{
+    margin: 1em auto;
+}
+#searchInput{
+    border: 2px solid #577c8e;
+    background: transparent;
+    border-radius: 5px;
+    width:40% ;
+    padding: 12px;
+}
+#searchInput:focus{
+      border: 2px solid #2f4157;
+}
+#searchButton{
+    padding: 1em 2em;
+    background-color:#577c8e ;
+    border-radius: 5px;
+    color: #f4efeb;
+        cursor: pointer;
+}
+.btnAll{
+    border: 2px solid #577c8e;
+    padding: 1em 2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color:#2f4157;
+    cursor: pointer;
+
+}
+.active{
+    background-color:#577c8e;
+    padding: 1em 2em;
+    border-radius: 3em;
+    color:#fff;
+    cursor: pointer;
+}
+#items{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+.card{
+    background-color:#fff;
+    min-width: 230px;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 15px 30px 2.5em rgba(1,2,68,0.08);
+}
+.imgContainer{
+    text-align: center;
+}
+.imgContainer img{
+    max-width:100% ;
+    object-fit: contain;
+    width: 115px;
+    height: 115px;
+}
+.container{
+    color: #2f4157;
+    padding-top:1em ;
+}
+.container h5{
+    font-weight: 500;
+}
+
+@media screen and (max-width:720px) {
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+    }
+    #items{
+          grid-template-columns:  auto auto;
+    grid-column-gap: 1em;
+
+    }
+}
+.hide{
+    display: none;
+}

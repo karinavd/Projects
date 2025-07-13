@@ -7,7 +7,21 @@
     <title>Filter and Search</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="searchInput" placeholder="Search product name here..">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="buttonsDiv">
+            <button class="btnAll" onclick="filterItems('all')">All</button>
+            <button class="btnAll" onclick="filterItems('dessert')">Dessert</button>
+            <button class="btnAll" onclick="filterItems('firstCourses')">First Courses</button>
+            <button class="btnAll" onclick="filterItems('secondCourses')">Second Courses</button>
+            <button class="btnAll" onclick="filterItems('drinks')">Drinks</button>
+            <button class="btnAll" onclick="filterItems('appetizer')">Appetizer</button>
+        </div>
+     <div id="items"></div>
+    </div>
     <script src="filterJs.js"></script>
 </body>
 </html>
