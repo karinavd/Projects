@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar{
+    height: 56px;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.navbar-left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+padding-left:8px ;
+    gap: 10px;
+  
+}
+.navbarHamb{
+    width: 40px;
+    cursor: pointer;
+}
+.logoImgNavbar{
+    color: white;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+}
+ .logoImgNavbar .logoImage{
+    font-size: 34px;
+    color: red;
+}
+.navbarTitle{
+    font-size: 20px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+
+/*left-navbar ends*/
+
+.navbar-center{
+    display: flex;
+    width: 50%;
+    gap: 10px;
+}
+.navbar_search{
+    width: 80%;
+    display: flex;
+}
+.navbar_searchInput{
+width: 100%;
+height: 40px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border: 1px solid rgb(58, 57, 57);
+background-color: #121212;
+color: white;
+font-size: 16px;
+padding-left: 30px;
+
+}
+.navbar_searchInput:focus{
+    outline: none;
+}
+.navbar_searchIconBox .searchIcon{
+    font-size: 28px;
+    color: white;
+}
+.navbar_searchIconBox{
+    width: 70px;
+    cursor: pointer;
+    border: 1px solid rgb(42, 42, 42);
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.navbar_mic{
+     width: 40px;
+     height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/*center navbar ends*/
+.navbar-right{
+    display: flex;
+    gap: 20px;
+ align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.notificationsNoneIcon{
+    color: white;
+}
+.btn-navbar-right{
+font-family: "Roboto", "Arial", sans-serif;
+font-weight: 500;
+font-size: 14px;
+white-space: nowrap;
+border: none;
+outline-width: 0;
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background-color: #303736;
+    color: white;
+    border-radius: 25px;
+    width: 98px;
+    height: 36px;
+}
+.avaImgNavBar{
+    width: 32px;
+    border: 50%;
+    cursor: pointer;
+}
+
+
+.navbar-modal{
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    top: 35px;
+    color: white;
+     width: 177px;
+         padding: 8px 0px;
+         border-radius: 10px;
+          background-color:#282828;
+}
+.navbar-option-modal{
+   
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+   gap: 12px;
+       font-size: 14px;
+       padding: 0px 36px 0px 16px;
+     
+      
+       font-family: "Roboto", "Noto", sans-serif;
+    font-weight: 400;
+}
+.navbar-option-modal:hover{
+       background-color: rgb(85, 85, 85);
+}
