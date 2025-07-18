@@ -7,7 +7,7 @@ const Subscriptions = () => {
 <div key={index} className="home-sidebar-topOption">
         
           <img src={x.image} className="HomeIcon" style={{borderRadius:"50%"}} />
-            <p>{x.name}</p>
+            <p>{`${x.name.slice(0,15)}...`}</p>
         </div>
        ))}
     </div>

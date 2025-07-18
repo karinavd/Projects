@@ -2,6 +2,11 @@ import React from "react";
 import "./Sidebar.css";
 import HomeIcon from "@mui/icons-material/Home";
 import { assets } from "../../assets/assets";
+import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
+import SmartDisplayOutlinedIcon from "@mui/icons-material/SmartDisplayOutlined";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import Subscriptions from "../Subscriptions/Subscriptions";
+import Explore from "../Explore/Explore";
 const ShortsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -105,64 +110,78 @@ const SubscriptionsIcon = () => (
     ></path>
   </svg>
 );
-import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
-import SmartDisplayOutlinedIcon from "@mui/icons-material/SmartDisplayOutlined";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import Subscriptions from '../Subscriptions/Subscriptions'
+import {exploreData,MoreInfo,LastSectionSideBar} from "../Explore/ExploreData"
+import LinksSidebar from "../LinksSidebar/LinksSidebar";
 
-const Sidebar = () => {
+const Sidebar = ({ sideNav }) => {
   return (
-    <div className="home-sidebar">
-      <div className="home-sidebar-top">
-        <div className="home-sidebar-topOption">
-          <HomeIcon className="HomeIcon" />
-          <p>Home</p>
+    sideNav && (
+      <div className="home-sidebar">
+        <div className="home-sidebar-top">
+          <div className="home-sidebar-topOption">
+            <HomeIcon className="HomeIcon" />
+            <p>Home</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <ShortsIcon className="HomeIcon" />
+            <p>Shorts</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <SubscriptionsIcon className="HomeIcon" />
+            <p>Subscriptions</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <YouTubeMusicIcon className="HomeIcon" />
+            <p>YouTube Music</p>
+          </div>
         </div>
-        <div className="home-sidebar-topOption">
-          <ShortsIcon className="HomeIcon" />
-          <p>Shorts</p>
+        <div className="home-sidebar-middle">
+          <div className="home-sidebar-topOption">
+            <p>You</p>
+            <ChevronRightIcon className="HomeIcon" />
+          </div>
+          <div className="home-sidebar-topOption">
+            <HistoryIcon className="HomeIcon" />
+            <p>History</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <PlaylistsIcon className="HomeIcon" />
+            <p>Playlists</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <SmartDisplayOutlinedIcon className="HomeIcon" />
+            <p>Your videos</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <WatchLaterOutlinedIcon className="HomeIcon" />
+            <p>Watch later</p>
+          </div>
+          <div className="home-sidebar-topOption">
+            <LikesIcon className="HomeIcon" />
+            <p>Watch later</p>
+          </div>
         </div>
-        <div className="home-sidebar-topOption">
-          <SubscriptionsIcon className="HomeIcon" />
-          <p>Subscriptions</p>
+        <div className="home-sidebar-middle">
+          <p className="subscriptions">Subscriptions</p>
+          <Subscriptions />
         </div>
-        <div className="home-sidebar-topOption">
-          <YouTubeMusicIcon className="HomeIcon" />
-          <p>YouTube Music</p>
+        <div className="home-sidebar-middle">
+          <p className="subscriptions">Explore</p>
+          <Explore  arrayData={exploreData}/>
+        </div>
+        <div className="home-sidebar-middle">
+          <p className="subscriptions">More from YouTube</p>
+          <Explore arrayData={MoreInfo}/>
+        </div>
+        <div className="home-sidebar-middle">
+          <p></p>
+          <Explore arrayData={LastSectionSideBar}/>
+        </div>
+         <div className="LinksSidebarDiv">
+         <LinksSidebar/>
         </div>
       </div>
-      <div className="home-sidebar-middle">
-        <div className="home-sidebar-topOption">
-          <p>You</p>
-          <ChevronRightIcon className="HomeIcon" />
-        </div>
-        <div className="home-sidebar-topOption">
-          <HistoryIcon className="HomeIcon" />
-          <p>History</p>
-        </div>
-        <div className="home-sidebar-topOption">
-          <PlaylistsIcon className="HomeIcon" />
-          <p>Playlists</p>
-        </div>
-        <div className="home-sidebar-topOption">
-          <SmartDisplayOutlinedIcon className="HomeIcon" />
-          <p>Your videos</p>
-        </div>
-        <div className="home-sidebar-topOption">
-          <WatchLaterOutlinedIcon className="HomeIcon" />
-          <p>Watch later</p>
-        </div>
-        <div className="home-sidebar-topOption">
-          <LikesIcon className="HomeIcon" />
-          <p>Watch later</p>
-        </div>
-      </div>
-      <div className="home-sidebar-middle">
-        <p className="subscriptions">Subscriptions</p>
- <Subscriptions/>
-
-      </div>
-    </div>
+    )
   );
 };
 
