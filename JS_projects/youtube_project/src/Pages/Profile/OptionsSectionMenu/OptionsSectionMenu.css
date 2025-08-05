@@ -1,0 +1,39 @@
+
+ .optionsSection{
+   height: 48px;
+    width: 100%;
+    border-bottom: 2px solid #aaa;
+ }
+ .optionsSection ul{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    cursor: pointer;
+    list-style: none;
+     outline: none;
+     font-weight: 500;
+     color: #aaa;
+     align-items: center;
+     font-size: 16px;
+ }
+  .optionsSection ul li{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+
+    outline: none;
+ }
+ .optionsSection ul li:hover{
+    border-bottom: 2px solid #aaa;
+  
+ }
+ .optionsSection hr{
+    color: #aaa;
+ }
+ .content-area {
+  background-color: white;
+
+  min-height: 500px;
+}

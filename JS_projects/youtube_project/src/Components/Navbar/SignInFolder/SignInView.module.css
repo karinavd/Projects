@@ -1,0 +1,36 @@
+.signInSection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.moreVertIconBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 50%;
+}
+.moreVertIconBtnSection{
+    position: relative;
+}
+
+.signInBtn{
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    padding: 0px 12px;
+    height: 34px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    justify-content: center;
+    gap: 6px;
+}
+.signInIcon{
+    fill: white;
+     height:24px; width:24px;
+
+}

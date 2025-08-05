@@ -1,0 +1,9 @@
+.loadingListLanguageSection{
+  
+    align-items: center;
+    background-color: #282828;
+
+}
+.languageSection:hover{
+background-color: #595959;
+}

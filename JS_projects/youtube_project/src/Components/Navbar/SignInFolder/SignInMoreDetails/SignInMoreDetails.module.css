@@ -1,0 +1,38 @@
+.optionsSection{
+  color: white;
+     background-color: #282828;
+     border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    right: 70%;
+    top: 100%;
+    width: 300px;
+    z-index: 10;
+    font-family: "Roboto";
+}
+.optionsFirstSection{
+    padding: 8px 0px;
+    
+}
+.underscore{
+    border-top: 1px solid white;
+    padding: 8px 0px;
+    border-bottom: 1px solid white;
+}
+.optionSection{
+    display: flex;
+      padding: 0px 36px 0px 16px;
+    height: 40px;
+    align-items: center;
+ justify-content:flex-start;
+    gap: 10px; cursor: pointer;
+}
+
+.optionSection p{
+   flex: 1;
+}
+.iconStyle{
+    height:24px; width:24px ;
+    fill: white; 
+   
+}

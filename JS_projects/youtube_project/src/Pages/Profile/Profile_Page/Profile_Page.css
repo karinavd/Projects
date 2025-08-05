@@ -1,0 +1,88 @@
+
+.profile_page{
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+
+flex: 1;
+margin-left: 270px;
+color: white;
+margin-top: 56px;
+
+}
+.profile_top_section{
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px 0;
+}
+.profile_top_section_profile{
+    width: 15%;
+    border-radius: 50%;
+    height: 100%;
+}
+.profile_top_section_ChannelName{
+    font-size: 36px;
+    font-weight: 700;
+}
+.commentPic{
+    width: 160px;
+    height: 160px;
+}
+.profile_top_section_Info{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.profile_top_section_Info p{
+    margin-left: 3px;  
+color: #aaa;
+}
+.profile_top_section_Describe{
+    font-size: 14px;
+    color: #aaa;
+}
+.buttonSection{
+    margin-top: 25px;
+   
+}
+.btnSubscribe{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 36px;
+    width: 95px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+} 
+ .btnSubscribedSection{
+  background-color: #272727;
+  
+    display: flex;
+    border-radius: 25px;
+      height: 36px;
+    align-items: center;
+     
+    width: 150px;
+    justify-content: center;
+
+ }
+ .subscribedBtn{
+      color: white;
+      border: none;
+      cursor: pointer;
+       font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+ }
+ .btnSubscribed img{
+      fill: black;
+      width: 25px;
+      height: 25px;
+
+ }
+ .none{
+    display: none;
+ }
+ 

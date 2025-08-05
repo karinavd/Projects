@@ -1,0 +1,119 @@
+{
+    "Playback":
+   [ {
+"name":"Toggle play/pause",
+"keyName":"k"
+    },
+    {
+"name":"Rewind 10 seconds",
+"keyName":"j"
+    },
+
+     {
+"name":"Fast forward 10 seconds",
+"keyName":"l"
+    },
+     {
+"name":"Previous video",
+"keyName":"P (SHIFT+p)"
+    },
+     {
+"name":"Next video",
+"keyName":"N (SHIFT+n)"
+    },
+     {
+"name":"Previous frame (while paused)",
+"keyName":","
+    },
+     {
+"name":"Next frame (while paused)",
+"keyName":"."
+    },
+     {
+"name":"Decrease playback rate",
+"keyName":"< (SHIFT+,)"
+    },
+     {
+"name":"Increase playback rate",
+"keyName":"> (SHIFT+.)"
+    },
+     {
+"name":"Seek to specific point in the video (7 advances to 70% of duration)",
+"keyName":"0..9"
+    },
+     {
+"name":"Seek to previous chapter",
+"keyName":"CONTROL + ←"
+    },
+     {
+"name":"Seek to next chapter",
+"keyName":"CONTROL + →"
+    }],
+  "General":
+    [ {
+"name":"Toggle full screen",
+"keyName":"f"
+    },
+     {
+"name":"Toggle theater mode",
+"keyName":"t"
+    },
+     {
+"name":"Toggle miniplayer",
+"keyName":"i"
+    },
+     {
+"name":"Close miniplayer or current dialog",
+"keyName":"ESCAPE"
+    },
+     {
+"name":"Toggle mute",
+"keyName":"m"
+    }],
+    "Subtitles and closed captions":
+    [ {
+"name":"If the video supports captions, toggle captions ON/OFF",
+"keyName":"c"
+    },
+     {
+"name":"Rotate through different text opacity levels",
+"keyName":"o"
+    },
+     {
+"name":"Rotate through different window opacity levels",
+"keyName":"w"
+    },
+     {
+"name":"Rotate through font sizes (increasing)",
+"keyName":"+"
+    },
+     {
+"name":"Rotate through font sizes (decreasing)",
+"keyName":"-"
+    }],
+    "Spherical Videos":
+     [{
+"name":"Pan up",
+"keyName":"w"
+    },
+     {
+"name":"Pan left",
+"keyName":"a"
+    },
+     {
+"name":"Pan down",
+"keyName":"s"
+    },
+     {
+"name":"Pan right",
+"keyName":"d"
+    },
+     {
+"name":"Zoom in",
+"keyName":"+ on numpad or ]"
+    },
+     {
+"name":"Zoom out",
+"keyName":"- on numpad or ["
+    }]
+    }

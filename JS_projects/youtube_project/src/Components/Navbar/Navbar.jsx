@@ -6,7 +6,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
 import AddIcon from "@mui/icons-material/Add";
+import {Link} from 'react-router-dom'
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import SignInView from "./SignInFolder/SignInView";
+import Login from "../Login/Login";
 const PlayIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +76,12 @@ const Navbar = (props) => {
   const [userPic, setUserPic] = useState(
     "https://api-private.atlassian.com/users/6b5c1609134a5887d7f3ab1b73557664/avatar"
   );
+  const [showLogin,setLogin] = useState(false)
+
   const [navModal, setNavModal] = useState(false);
+  const setShowLogin=()=>{
+    setLogin(item=>!item)
+  }
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -82,9 +90,9 @@ const Navbar = (props) => {
           }}>
           <MenuIcon sx={{ color: "white" }} />
         </div>
-        <div className="logoImgNavbar">
+        <Link to={'/'} className="logoImgNavbar">
           <YouTubeIcon className="logoImage" />
-        </div>
+        </Link>
       </div>
       <div className="navbar-center">
         <div className="navbar_search">
@@ -125,8 +133,11 @@ const Navbar = (props) => {
               <p>Create post</p>
             </div>
           </div>
-        )}
-      </div>
+        )}  
+        {/* <SignInView onClickSignInView={setShowLogin}/> */}
+      
+      </div> 
+     {/* {showLogin&& <Login setLogin={setLogin}/>} */}
     </div>
   );
 };

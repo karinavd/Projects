@@ -111,11 +111,13 @@ border-bottom-right-radius: 20px;
 .navbar-right{
     display: flex;
     gap: 20px;
+  
  align-items: center;
     justify-content: center;
     position: relative;
 }
 .notificationsNoneIcon{
+    cursor: pointer;
     color: white;
 }
 .btn-navbar-right{
@@ -126,6 +128,7 @@ white-space: nowrap;
 border: none;
 outline-width: 0;
 display: flex;
+cursor: pointer;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -157,15 +160,13 @@ display: flex;
 .navbar-option-modal{
    
     padding: 10px;
-    cursor: pointer;
+      cursor: pointer;
     color: white;
     display: flex;
     align-items: center;
    gap: 12px;
        font-size: 14px;
        padding: 0px 36px 0px 16px;
-     
-      
        font-family: "Roboto", "Noto", sans-serif;
     font-weight: 400;
 }

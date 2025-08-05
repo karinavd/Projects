@@ -1,0 +1,10 @@
+
+.navbarLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar_Main{
+    background-color: #282828;
+}

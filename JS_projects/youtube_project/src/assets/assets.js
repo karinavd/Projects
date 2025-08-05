@@ -38,6 +38,7 @@ import thumbnail7 from './thumbnail7.png'
 import thumbnail8 from './thumbnail8.png'
 import tom from './tom.png'
 import upload from './upload.png'
+import dot from './dot.png'
 import user_profile from './user_profile.jpg'
 import voice_search from './voice-search.png'
 
@@ -54,6 +55,7 @@ explore,
 gerard,
 history,
 home,
+dot,
 jack,
 library,
 like,
