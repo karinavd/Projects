@@ -7,4 +7,34 @@
 }
 .navbar_Main{
     background-color: #282828;
+    display: flex;
+    font-family: "Roboto";
+    color: white;
+    padding: 10px 24px 10px 16px ;
+    justify-content: space-between;
+}
+.classIcon{
+    fill: white;
+       
+}
+.createPart{
+    display: flex;
+    align-items: center;
+    width: 25%;
+height: 34px;
+    background-color: #282828;
+    border-radius: 10px;
+    gap: 25px;
+    justify-content: space-around;
+    padding: 0px 5px;
+    border: 1px solid white;
+}
+.navbarRight{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.classIcon{
+     height: 32px;
+width: 32px;
 }
