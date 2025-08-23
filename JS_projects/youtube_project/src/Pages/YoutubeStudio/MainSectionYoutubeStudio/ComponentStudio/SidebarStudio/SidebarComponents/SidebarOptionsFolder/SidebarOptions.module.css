@@ -1,9 +1,20 @@
+.sidebarOptionsSection{
+    background-color: #282828;
+ 
+    border: 0.5px solid white;
+}
 .iconStyle{
     width: 24px;
+    fill: white;
     height: 24px;
 }
 .sidebarOptionsSection_option{
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sidebarOptionsSection_option:hover{
+    background-color: #1f1f1f;
 }

@@ -1,0 +1,4 @@
+.sidebarStudioSection{
+    display: flex;
+    flex-direction: column;
+}

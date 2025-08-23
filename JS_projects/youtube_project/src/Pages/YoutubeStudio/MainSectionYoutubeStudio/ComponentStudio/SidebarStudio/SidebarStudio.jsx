@@ -6,8 +6,10 @@ import React from 'react'
 const SidebarStudio = () => {
   return (
     <>
+    <div className={styles.sidebarStudioSection}>
     <SidebarInfoChannel/>
     <SidebarOptions/>
+    </div>
     </>
   )
 }

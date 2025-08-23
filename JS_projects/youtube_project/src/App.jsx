@@ -7,6 +7,7 @@ import Profile from './Pages/Profile/Profile'
 import VideosSection from './Pages/Profile/OptionsSectionMenu/VideosSection/VideosSection'
 import SignUp from './Pages/SignUpFolder/SignUp'
 import PagesStudio from './Pages/YoutubeStudio/MainSectionYoutubeStudio/PagesStudio/PagesStudio'
+import Dashboard from './Pages/YoutubeStudio/MainSectionYoutubeStudio/PagesStudio/PagesComponent/DashboardFolder/Dashboard'
 const MainPartApp=()=>{
   const [sideNav,setSideNav ] = useState(true);
   const setSideNavFunction=(val)=>{
@@ -40,6 +41,7 @@ const App = () => {
       <Routes>
       <Route path='/*' element={ <MainPartApp/>}/>
     <Route path='/studio' element={<PagesStudio/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
     </Routes>
    
     </>

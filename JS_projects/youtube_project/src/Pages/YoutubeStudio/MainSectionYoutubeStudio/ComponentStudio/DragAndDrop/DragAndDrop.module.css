@@ -1,0 +1,94 @@
+.dragAndDropSection{
+    width: 100%;
+    border-radius: 25px;
+    background-color: #282828;
+    color: white;
+    
+    font-family: "Roboto";
+    
+}
+.headDragAndDropSection{
+    display: flex;
+    align-items: center;padding: 0px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    height: 28px;
+    padding: 16px 24px;
+}
+.headBtnDragAndDrop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.imgDragAndDropHeader{
+    fill: white;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.uploadParagraph{
+    font-size: 20px;
+    font-weight: 500;
+}
+.formDragAndDrop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.formDragAndDrop p{
+    margin: 0;
+    line-height: 1.6;
+}
+.uploadSection{
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+}
+.fileUploadIcon{
+color: #909090;
+    width: 100px;
+    height: 100px;
+    
+}
+.customFileButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+   padding: 0px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 36px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.customFileButton:hover {
+    background-color: #d8d8d8;
+    border-color: #666;
+}
+
+.customFileButton input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.buttomSection{
+    align-self: flex-end;
+}
