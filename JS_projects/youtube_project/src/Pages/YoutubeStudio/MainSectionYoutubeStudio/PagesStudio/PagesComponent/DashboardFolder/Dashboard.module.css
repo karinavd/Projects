@@ -2,7 +2,8 @@
   color: white;
   background-color: #282828;
   font-family: "Roboto";
-  padding: 5px;
+  padding: 10px 20px;
+
 }
 .imgUpload {
   width: 152px;
@@ -18,6 +19,7 @@ h1 {
 .uploadDragAndDropExternal {
   border: 1px dashed #aaa;
   border-radius: 10px;
+  height: 78%;
 }
 .uploadDragAndDrop {
   border: 1px dashed #aaa;
@@ -29,6 +31,7 @@ h1 {
   justify-content: center;
   padding: 10px;
   margin: 15px;
+  
 }
 .btnUploadVideo {
   background-color: white;
@@ -37,6 +40,7 @@ h1 {
   font-size: 14px;
   font-weight: 500;
   width: 120px;
+   cursor: pointer;
 }
 .uploadDragAndDropParagraph {
   font-size: 13px;
@@ -46,5 +50,158 @@ h1 {
 .statistics{
   border: 1px solid #aaa;
   border-radius: 10px;
-  height: 80%;
+  height: 65%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.statisticsParagraph{
+  font-size: 18px;
+  font-weight: 500;
+}
+.currentSubscribers{
+  font-size: 13px;
+    margin: 0;
+}
+.countSubscribers{
+  font-size: 34px;
+  margin: 0;
+}
+/* .TopVideos{
+} */
+.summaryParagragh{
+  font-size: 15px;
+  margin: 0 0 5px 0;
+
+}
+.summary{
+    border-bottom: 1px solid #aaaaaa8f;
+}
+.statisticsSectionAnalytics{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #aaaaaa8f;
+
+}
+.statisticsSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 5px;
+gap: 5px;
+
+}
+.btnAnalytics{
+ background-color:#3e3e3e ;
+ border-radius: 20px;
+ padding: 3px 7px;
+ border: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ align-self: flex-start;
+  cursor: pointer;
+width: 40%;
+font-size: 15px;
+font-weight: 500;
+ height: 36px;
+}
+.thirdSection{
+ padding: 0px 30px;
+ border-radius: 10px;
+}
+.creatorInsider{
+  padding: 0px 20px 20px 20px;
+}
+.video{
+  width: 100%;
+  
+  height: 100%;
+   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.previewVideo{
+width: 100%;
+margin: 0 auto;
+border-radius: 10px;
+height: 30%;
+ cursor: pointer;
+}
+.description p:first-child{
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0;
+}
+.description p{
+  font-size: 13px;
+  color: #aaa;
+}
+.whatsNewSectionElement{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.thirdSection{
+  gap: 20px;
+}
+.thirdSection > div{
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  
+
+}
+.whatsNewSectionElement:hover{
+ 
+  color: #3ea6ff;
+   cursor: pointer;
+}
+.whatsNewSectionElement:hover .linkImage{
+  fill: #3ea6ff;
+   cursor: pointer;
+}
+.whatsNewSection{
+  margin: 15px 0px;
+  padding: 20px;
+}
+.linkImage{
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+}
+
+
+
+
+/*NavSection*/
+.navDashboardSection{
+  display: flex;
+gap: 15px;
+}
+.navDashboardSectionElement{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.navDashboardSectionElement{
+  cursor: pointer;
+}
+.navDashboardSectionElement> a{
+  text-decoration: none;
+  color: #aaa;
+  font-size: 13px;
+}
+.navDashboardSectionElement .linkImage{
+  width: 17px;
+}
+.navDashboardSectionElement:hover .linkImage{
+  fill: #aaa;
 }
