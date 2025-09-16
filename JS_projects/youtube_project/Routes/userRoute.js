@@ -1,5 +1,7 @@
-const require  = createRequire(import.meta.url)
+import express from 'express';
+import {signUp} from'../Controllers/userController.js'
+// const express = requir'express'); 
 
-const router = express().Router();
-const UserController = require('../Controllers/userController')
-router.post('/signUp',UserController.signUp)
+ const router = express.Router();
+router.post('/signUp',signUp)
+export default router;

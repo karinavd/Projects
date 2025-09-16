@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    about:{
+    email:{
         type:String,
         required:true
     },
@@ -27,5 +27,5 @@ const userSchema = new mongoose.Schema({
 
 },{timestamps:true})
 
-mongoose.exports=mongoose.model('user',userSchema)
-  
+const User=mongoose.model('user',userSchema)
+  export default User;  
