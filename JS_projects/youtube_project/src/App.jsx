@@ -9,6 +9,7 @@ import SignUp from './Pages/SignUpFolder/SignUp'
 import PagesStudio from './Pages/YoutubeStudio/MainSectionYoutubeStudio/PagesStudio/PagesStudio'
 import Dashboard from './Pages/YoutubeStudio/MainSectionYoutubeStudio/PagesStudio/PagesComponent/DashboardFolder/Dashboard'
 import Analytics from './Pages/YoutubeStudio/MainSectionYoutubeStudio/PagesStudio/PagesComponent/AnalyticsFolder/Analytics'
+import Login from './Components/Login/Login'
 const MainPartApp=()=>{
   const [sideNav,setSideNav ] = useState(true);
   const setSideNavFunction=(val)=>{
@@ -22,7 +23,7 @@ setSideNav(val)
       <Route path='/watch/:id' element={<Video/>}/>
       <Route path="/user/:id/*" element={<Profile sideNav={sideNav}/>}/>
       <Route path="/signUp" element={<SignUp/>}/>
-
+<Route path="/login" element={<Login/>}/>
         {/* <Route path="/" element={<HomeSection/>} /> */}
         {/* <Route path="/videos" element={<VideosSection/>} /> */}
         {/* <Route path="/shorts" element={<ShortsSection/>} />

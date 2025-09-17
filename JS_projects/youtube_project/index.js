@@ -14,7 +14,6 @@ app.use(express.json())
 // })
 
 // const AuthRoutes=require('./Routes/userRoute.js')
-require('./Connection/connection.js')
 app.use('/auth',AuthRoutes)
 app.listen(port,()=>{
   console.log("backend start learning")
