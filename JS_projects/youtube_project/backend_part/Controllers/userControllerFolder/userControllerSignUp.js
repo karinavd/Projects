@@ -3,7 +3,8 @@ import { data } from "react-router-dom"
 
 const require = createRequire(import.meta.url)
 import User from '../../Modals/user.js'
-const bcrypt = require('bcryptjs')  
+const bcrypt = require('bcryptjs') 
+ const jwt = require('jsonwebtoken')
 export const signUp = async (req,res)=>{
     try{
         const {channelName,userName,password,email,profilePic}=req.body;
